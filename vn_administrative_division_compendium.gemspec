@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "vn_administrative_division_compendium"
   spec.version = VnAdministrativeDivisionCompendium::VERSION
   spec.authors = ["jkmfv"]
-  spec.email = ["tran.van.dat@moneyforward.vn"]
+  spec.email = ["dat.trvan@gmail.com"]
 
   spec.summary = "TODO: Write a short summary, because RubyGems requires one."
   spec.description = "TODO: Write a longer description or delete this line."
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files = Dir.chdir(__dir__) do
+  spec.files = ["README.md", "README.vi.md"] + Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
       (File.expand_path(f) == __FILE__) ||
         f.start_with?(*%w[bin/ test/ spec/ features/ .git appveyor Gemfile])
